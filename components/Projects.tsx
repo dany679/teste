@@ -12,17 +12,42 @@ const projectsList = [
     link: "https://next-13-full-stack-seven.vercel.app/",
     date: "ago 2023",
     color: "bg-project-2",
+    tools: [
+      { name: "next-13" },
+      { name: "tailwind" },
+      { name: "mongodb" },
+      { name: "clerk/jwt" },
+    ],
   },
+
   {
     color: "bg-project-0",
-    name: "Tmdb",
+    name: "Genius",
     date: "may 2020",
     description:
-      "this website work like the tmdb, where you can search the movie and found actors, rating, directors, revenue and another details",
-    image: "/projects/home-tmdb.png",
-    github: "https://github.com/dany679/TmdbWebSite",
-    link: "https://tmdbdany.netlify.app/",
+      "The project is a website to generate data like 'images, conversation , code 'through the prompt developed using openAi and stripe",
+    image: "/projects/project2-ai-saas-genius.png",
+    github: "https://github.com/dany679/next13-ai-clerk-prisma-saas-stripe",
+    link: "https://next13-ai-clerk-prisma-saas-stripe.vercel.app/",
+    tools: [
+      { name: "next-13" },
+      { name: "tailwind" },
+      { name: "prisma" },
+      { name: "Mysql" },
+      { name: "stripe" },
+      { name: "clerk/jwt" },
+    ],
   },
+  // {
+  //   color: "bg-project-0",
+  //   name: "Tmdb",
+  //   date: "may 2020",
+  //   description:
+  //     "this website work like the tmdb, where you can search the movie and found actors, rating, directors, revenue and another details",
+  //   image: "/projects/home-tmdb.png",
+  //   github: "https://github.com/dany679/TmdbWebSite",
+  //   link: "https://tmdbdany.netlify.app/",
+  // },
 ];
 const Projects = () => {
   return (
@@ -60,6 +85,14 @@ const Projects = () => {
               <div className="text-center md:text-start md:place-self-start md:max-w-2xl pt-10 ">
                 <h4 className="project_subtitle">{project.name}</h4>
                 <p className="py-2">{project.description}</p>
+                <div className="flex flex-wrap flex-row justify-center md:justify-start">
+                  {project.tools.map((tool) => (
+                    <div className="badge" key={tool.name}>
+                      <h4 className="text-transform: uppercase">{tool.name}</h4>
+                    </div>
+                  ))}
+                </div>
+
                 <div className="flex flex-row gap-2">
                   <Link href={project.github} target="_blank">
                     <BsGithub size={30} className="button_icons" />
