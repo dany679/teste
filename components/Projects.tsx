@@ -4,6 +4,31 @@ import { BsArrowUpRightSquare, BsGithub } from "react-icons/bs";
 import SlideUp from "./SlideUp";
 const projectsList = [
   {
+    color: "bg-project-0",
+    name: "Fix Machines",
+    date: "april 2024",
+    image: "/projects/project-3-next-14-Fix-Machines.png",
+    description:
+      "this web site base on the idea of someone how work fix machines can be used to track the repairing process",
+    github: "https://github.com/dany679/Fix-Machines-Next-14",
+    link: "https://fix-machines-next-14.vercel.app/",
+    // link: "https://fix-machines-next-14.vercel.app/",
+    tools: [
+      { name: "next-14" },
+      { name: "tailwind" },
+      { name: "Mui" },
+      { name: "React-query-string" },
+      { name: "TansStack(react-query)" },
+      { name: "react-form-hook" },
+      { name: "zod" },
+      { name: "Nestjs" },
+      { name: "prisma" },
+      { name: "Postgresql" },
+      { name: "cypress" },
+      { name: "react testing library" },
+    ],
+  },
+  {
     name: "Promtopia",
     description:
       "Promtopia is a web app to save and find prompt or tag prompts.",
@@ -38,16 +63,6 @@ const projectsList = [
       { name: "clerk/jwt" },
     ],
   },
-  // {
-  //   color: "bg-project-0",
-  //   name: "Tmdb",
-  //   date: "may 2020",
-  //   description:
-  //     "this website work like the tmdb, where you can search the movie and found actors, rating, directors, revenue and another details",
-  //   image: "/projects/home-tmdb.png",
-  //   github: "https://github.com/dany679/TmdbWebSite",
-  //   link: "https://tmdbdany.netlify.app/",
-  // },
 ];
 const Projects = () => {
   return (
@@ -72,10 +87,9 @@ const Projects = () => {
                     className="hover:opacity-80"
                   >
                     <Image
-                      // src="/skills1.png"
                       src={project.image}
                       alt={project.name}
-                      className=" shadow-3xl rounded-t-lg  min-w-[150px] "
+                      className=" shadow-3xl rounded-t-lg  min-w-[150px]  hover-scale-110"
                       width={1000}
                       height={300}
                     />
@@ -88,11 +102,12 @@ const Projects = () => {
                 <div className="flex flex-wrap flex-row justify-center md:justify-start">
                   {project.tools.map((tool) => (
                     <div className="badge" key={tool.name}>
-                      <h4 className="text-transform: uppercase">{tool.name}</h4>
+                      <h4 className="text-transform: uppercase text-base">
+                        {tool.name}
+                      </h4>
                     </div>
                   ))}
                 </div>
-
                 <div className="flex flex-row gap-2">
                   <Link href={project.github} target="_blank">
                     <BsGithub size={30} className="button_icons" />
