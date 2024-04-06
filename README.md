@@ -3,7 +3,7 @@
 </p>
 
 <p>Link para visitar o site : 
-<a href="https://portifolio-git-main-dany679.vercel.app/" />Demo</a>
+<a href="https://portifolio-opal-chi.vercel.app/" />Demo</a>
 </p>
 <p align='center'> Portifolio 2.0 <p/>
 
