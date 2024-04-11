@@ -69,11 +69,7 @@ const Projects = () => {
     <article id="projects" className="pt-10">
       <h2 className="title_article">Projects </h2>
       <hr className="w-6 h-1 mx-auto my-4 bg-primary-500 border-0 rounded"></hr>
-      <div
-        // className="grid md:grid-rows-1 md:grid-flow-col place-content-center  md:gap-24"
-        className=""
-        //  className="grid grid-rows-1  md:grid-cols-2  lg:gap-20 gap-6  md:place-items-start place-content-start pt-6 text-center md:text-start  ">
-      >
+      <div className="">
         {projectsList.map((project, index) => (
           <SlideUp key={index} offset="-100px 0px -100px 0px">
             <div className="grid-row-to-cols2 animate-slideUpCubiBezier animation-delay-1 ">
