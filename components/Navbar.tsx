@@ -1,8 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { Link } from "react-scroll/modules";
@@ -22,29 +21,31 @@ const Navbar = () => {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme && theme === "system" ? systemTheme : theme;
   const [navbar, setNavbar] = useState(false);
-  const [mounted, setMounted] = useState(false);
-  const pathname = usePathname();
+  // const [mounted, setMounted] = useState(false);
   const ToggleTheme = () => (
     <button
       aria-label="Toggle Dark Mode"
-      // className="p-2 rounded-xl dark:bg-stone-600 bg-stone-100"
       className="btn_toggle_theme"
+      data-testid="button-theme-toggle"
+      onClick={() =>
+        setTheme(!currentTheme || currentTheme === "light" ? "dark" : "light")
+      }
     >
       {!currentTheme || currentTheme === "light" ? (
-        <RiMoonFill size={30} color="black" onClick={() => setTheme("dark")} />
+        <RiMoonFill size={30} color="black" />
       ) : (
-        <RiSunLine size={30} color="white" onClick={() => setTheme("light")} />
+        <RiSunLine size={30} color="white" />
       )}
     </button>
   );
   // fix theme error
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  // useEffect(() => {
+  //   setMounted(true);
+  // }, []);
 
-  if (!mounted) {
-    return null;
-  }
+  // if (!mounted) {
+  //   return null;
+  // }
 
   const PhoneMenu = () => (
     <div className="md:hidden">

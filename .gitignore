@@ -5,6 +5,11 @@
 /.pnp
 .pnp.js
 
+#i`m tring diferent packages like pnpm , npm and yarn for check the performance
+.yarn**
+.yarn/
+.yarn/**
+
 # testing
 /coverage
 
@@ -33,3 +38,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+*storybook.log
