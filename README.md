@@ -3,7 +3,7 @@
 </p>
 
 <p>Link para visitar o site : 
-<a href="https://portifolio-opal-chi.vercel.app/" />Demo</a>
+<a href="https://portifolio-dany679.vercel.app/"/>Demo</a>
 </p>
 <p align='center'> Portifolio 2.0 <p/>
 
@@ -23,14 +23,15 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- Next.13
+- Next.14
 - Type Script
 - Hooks
 - Tailwind
+- Storybook
 
 ## 💻 Projeto
 
-O projeto sera um site de portfólio desenvolvido no next13 no qual o deploy foi executado no vercel para um CI/CD <a href="https://vercel.com/" /> vercel</a>
+O projeto sera um site de portfólio desenvolvido no next13 no qual o deploy foi executado no vercel, para verificar olhe o demo acima <a href="https://vercel.com/" /> vercel</a>
 
 ## :memo: Licença
 
@@ -43,10 +44,14 @@ case you use npm just change to npm install and npm start
 
 ```shell
 #  install dependencies, run :
-$ yarn
+$ npm i
 
 # start
-$ yarn start
+$ npm run build
+$ npm run start
+
+# dev
+$ npm run dev
 
 ```
 
