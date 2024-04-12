@@ -1,13 +1,13 @@
 "use client";
 import { ThemeProvider } from "next-themes";
-import React from "react";
+import { ReactNode } from "react";
 
-const ThemesProviderSet = ({ children }: { children: React.ReactNode }) => {
+const ThemesProviderSet = ({ children }: { children: ReactNode }) => {
   return (
     <ThemeProvider
       enableSystem={true}
       attribute="class"
-      defaultTheme="light"
+      // defaultTheme="light"
       themes={["light", "dark"]}
     >
       {children}
