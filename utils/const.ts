@@ -111,7 +111,7 @@ export const experienceList = [
     location: "BH, MG - Brazil",
     image: "/jobs/work-inside.png",
     description:
-      "The company has a new product that is a car service repair platform. The main goal of the platform that allows the users to find services for car problems in a simple and fast way. the company use B2B and B2C models",
+      "Its a web-site very user friendly, were the promoter create the events and all the areas available and the user  buy the tickets",
     link: "https://furandoafila.com.br/",
     tools: [
       { name: "Next" },
