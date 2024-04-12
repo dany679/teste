@@ -1,19 +1,26 @@
 import Image from "next/image";
 
 const skillsList = [
+  { skill: "Next.js" },
   { skill: "React.js" },
+  { skill: "React-native" },
   { skill: "TypeScript" },
   { skill: "JavaScript" },
-  { skill: "Next.js" },
   { skill: "Tailwind" },
-  { skill: "StyledComponents" },
-  { skill: "MongoDb" },
-  { skill: "MySql" },
+  { skill: "Styled-Components" },
+  { skill: "Mui" },
+  { skill: "Cypress" },
   { skill: "Node.js" },
+  { skill: "Nest.js" },
+  { skill: "Prisma" },
+  { skill: "MongoDb" },
+  { skill: "Postgresql" },
+  { skill: "MySql" },
   { skill: "Git" },
   { skill: "Github" },
   { skill: "Kabam" },
   { skill: "Jira" },
+  { skill: "..." },
 ];
 const webList = [
   { skill: "TypeScript" },
