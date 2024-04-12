@@ -1,10 +1,9 @@
-"use client"; // this is a client component
+"use client";
 
 import { ReactNode, useEffect, useRef } from "react";
 interface Props {
   offset?: string;
   children?: ReactNode;
-  // any props that come into the component
 }
 
 export default function SlideUp({ children, offset = "0px" }: Props) {

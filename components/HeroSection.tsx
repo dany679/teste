@@ -24,9 +24,9 @@ const HeroSection = () => {
           Hi, I&#39;m Danie!
           {/* Ola eu sou Danie! */}
         </h1>
-        <p className="text-lg mt-4 mb-6 md:text-2xl">
+        <p className="sub_tittle mt-4 mb-6">
           I&#39;have been for more than two years
-          <span className="font-semibold text-cyan-600">
+          <span className="font-semibold text-primary-600 sub_tittle">
             {"  "} Software Engineer {"  "}{" "}
           </span>
           living on Pirapora, MG. Working towards creating software that makes

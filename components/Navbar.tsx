@@ -14,6 +14,7 @@ interface NavItem {
 const NAV_ITENS: Array<NavItem> = [
   { label: "Home", page: "home" },
   { label: "About", page: "about" },
+  { label: "Experiences", page: "experiences" },
   { label: "Projects", page: "projects" },
 ];
 
@@ -96,8 +97,6 @@ const Navbar = () => {
                 to={item.page}
                 className={
                   "block lg:inline-block text-neutral-900  hover:text-primary-700 dark:text-neutral-100  hover:dark:text-primary-300  cursor-pointer"
-
-                  // "block lg:inline-block text-neutral-900  hover:text-neutral-700 dark:text-neutral-100  hover:dark:text-neutral-300  cursor-pointer"
                 }
                 activeClass="active"
                 spy={true}

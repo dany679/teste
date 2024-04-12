@@ -1,69 +1,9 @@
+import SlideUp from "@/components/slideUp";
+import { projectsList } from "@/utils/const";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowUpRightSquare, BsGithub } from "react-icons/bs";
-import SlideUp from "./SlideUp";
-const projectsList = [
-  {
-    color: "bg-project-0",
-    name: "Fix Machines",
-    date: "april 2024",
-    image: "/projects/project-3-next-14-Fix-Machines.png",
-    description:
-      "this web site base on the idea of someone how work fix machines can be used to track the repairing process",
-    github: "https://github.com/dany679/Fix-Machines-Next-14",
-    link: "https://fix-machines-next-14.vercel.app/",
-    // link: "https://fix-machines-next-14.vercel.app/",
-    tools: [
-      { name: "next-14" },
-      { name: "tailwind" },
-      { name: "Mui" },
-      { name: "React-query-string" },
-      { name: "TansStack(react-query)" },
-      { name: "react-form-hook" },
-      { name: "zod" },
-      { name: "Nestjs" },
-      { name: "prisma" },
-      { name: "Postgresql" },
-      { name: "cypress" },
-      { name: "react testing library" },
-    ],
-  },
-  {
-    name: "Promtopia",
-    description:
-      "Promtopia is a web app to save and find prompt or tag prompts.",
-    image: "/projects/project-1-next-full.png",
-    github: "https://github.com/dany679/Next-13-Full-Stack",
-    link: "https://next-13-full-stack-seven.vercel.app/",
-    date: "ago 2023",
-    color: "bg-project-2",
-    tools: [
-      { name: "next-13" },
-      { name: "tailwind" },
-      { name: "mongodb" },
-      { name: "clerk/jwt" },
-    ],
-  },
 
-  {
-    color: "bg-project-0",
-    name: "Genius",
-    date: "may 2020",
-    description:
-      "The project is a website to generate data like 'images, conversation , code 'through the prompt developed using openAi and stripe",
-    image: "/projects/project2-ai-saas-genius.png",
-    github: "https://github.com/dany679/next13-ai-clerk-prisma-saas-stripe",
-    link: "https://next13-ai-clerk-prisma-saas-stripe.vercel.app/",
-    tools: [
-      { name: "next-13" },
-      { name: "tailwind" },
-      { name: "prisma" },
-      { name: "Mysql" },
-      { name: "stripe" },
-      { name: "clerk/jwt" },
-    ],
-  },
-];
 const Projects = () => {
   return (
     <article id="projects" className="pt-10">
