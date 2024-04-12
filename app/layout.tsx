@@ -16,7 +16,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemesProvider>
           <Navbar />
-          <main>{children}</main>
+          <main className="flex min-h-screen flex-col pt-20 md:px-20 px-4 dark:bg-stone-900  max-w-8xl mx-auto">
+            {children}
+          </main>
           <Footer />
         </ThemesProvider>
       </body>

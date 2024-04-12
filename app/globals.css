@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  /* p {
+    @apply text-sm md:text-base  bg-red-500;
+  } */
+  p {
+    @apply text-sm md:text-base;
+  }
+  span {
+    @apply text-sm md:text-base;
+  }
+}
+.sub_tittle {
+  @apply text-lg md:text-2xl;
+}
 .btn_black {
   @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm  flex items-center justify-center;
 }
