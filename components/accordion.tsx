@@ -10,7 +10,6 @@ type AccordionpProps = {
   startDate: string;
   endDate?: string | null;
   location?: string;
-  remote?: boolean;
 };
 
 export default function Accordion({
@@ -20,7 +19,6 @@ export default function Accordion({
   startDate,
   location,
   active = false,
-  remote = false,
   endDate = null,
 }: AccordionpProps) {
   const [accordionOpen, setAccordionOpen] = useState<boolean>(() => active);
@@ -38,16 +36,14 @@ export default function Accordion({
             aria-expanded={accordionOpen}
             aria-controls={`accordion-text-${id}`}
           >
-            <div className="flex flex-row w-full justify-between text-primary-950 dark:text-primary-50 px-1">
+            <div className="flex flex-row w-full justify-between text-primary-950 dark:text-primary-50 px-1 whitespace-nowrap items-center">
               <div className="flex flex-wrap gap-x-1 md:gap-x-4 ">
                 <span className="">{title}</span>
                 <span className="no-wrap">{location}</span>
               </div>
-              <div className="flex flex-wrap">
-                <span className="no-wrap">
-                  {startDate} - {endDate || "current"}
-                </span>
-              </div>
+              <span className="text-nowrap ">
+                {startDate} - {endDate || "current"}
+              </span>
             </div>
             <svg
               className="dark:fill-primary-300  fill-primary-950 shrink-0 ml-4 mr-2"
@@ -80,7 +76,6 @@ export default function Accordion({
         className={` dark:bg-primary-700  bg-primary-200  rounded-md my-2 py-2 grid text-sm overflow-hidden transition-all duration-300 ease-in-out ${accordionOpen ? "grid-rows-[1fr] opacity-100 " : "grid-rows-[0fr] opacity-0 "}`}
       >
         <div className="overflow-hidden">
-          {/* //inside Accordion */}
           <div className="p-3">{children}</div>
         </div>
       </div>
