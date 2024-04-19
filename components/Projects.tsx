@@ -1,13 +1,20 @@
-import SlideUp from "@/components/slideUp";
+import SlideUp from "@/components/shared/slide-up";
+import { Link } from "@/navigation";
 import { projectsList } from "@/utils/const";
+import { cn } from "@/utils/lib";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
+// import Image from "next/image";
+// import Link from "next/link";
 import { BsArrowUpRightSquare, BsGithub } from "react-icons/bs";
 
 const Projects = () => {
+  const places = useTranslations("components.navbar.places");
+  const projects = useTranslations("Home.projects");
+
   return (
     <article id="projects" className="pt-10">
-      <h2 className="title_article">Projects </h2>
+      <h2 className="title_article capitalize">{places("projects")}</h2>
       <hr className="w-6 h-1 mx-auto my-4 bg-primary-500 border-0 rounded"></hr>
       <div className="">
         {projectsList.map((project, index) => (
@@ -15,7 +22,7 @@ const Projects = () => {
             <div className="grid-row-to-cols2 animate-slideUpCubiBezier animation-delay-1 ">
               <div className="text-center md:text-start md:max-w-2xl pt-10 ">
                 <div
-                  className={`flex ${project.color} px-10 pt-10 rounded-t-xl  `}
+                  className={cn("`flex px-6 pt-8 rounded-t-xl", project.color)}
                 >
                   <Link
                     href={project.link}
@@ -34,7 +41,7 @@ const Projects = () => {
               </div>
               <div className="text-center md:text-start md:place-self-start md:max-w-2xl pt-10 ">
                 <h4 className="project_subtitle">{project.name}</h4>
-                <p className="py-2">{project.description}</p>
+                <p className="py-2">{projects(project.id)}</p>
                 <div className="flex flex-wrap flex-row justify-center md:justify-start">
                   {project.tools.map((tool) => (
                     <div className="badge" key={tool.name}>
