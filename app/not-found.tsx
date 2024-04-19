@@ -1,5 +1,5 @@
 import { Link } from "@/navigation";
-
+export const dynamic = "force-dynamic";
 export default function NotFound() {
   return (
     <main className="flex min-h-screen flex-col md:px-20 px-4 dark:bg-stone-900  max-w-8xl mx-auto">
