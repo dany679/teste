@@ -1,4 +1,4 @@
-import Page from "@/app/page";
+import Page from "@/app/[locale]/page";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import type { Meta, StoryObj } from "@storybook/react";

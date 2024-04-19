@@ -11,20 +11,24 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@storybook/core-events": "^8.0.8",
     "@types/node": "20.5.0",
     "@types/react": "^18.2.74",
     "@types/react-dom": "18.2.7",
     "@types/react-scroll": "^1.8.7",
     "autoprefixer": "10.4.15",
+    "clsx": "^2.1.0",
     "eslint": "8.47.0",
-    "eslint-config-next": "^14.1.4",
-    "next": "^14.1.4",
+    "eslint-config-next": "^14.2.2",
+    "next": "^14.2.2",
+    "next-intl": "^3.11.1",
     "next-themes": "^0.2.1",
     "postcss": "^8.4.38",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
     "react-scroll": "^1.8.9",
+    "tailwind-merge": "^2.2.2",
     "tailwindcss": "3.3.3",
     "typescript": "5.1.6"
   },
@@ -37,10 +41,11 @@
     "@storybook/addon-onboarding": "^8.0.7",
     "@storybook/addon-themes": "^8.0.8",
     "@storybook/blocks": "^8.0.7",
-    "@storybook/nextjs": "^8.0.7",
+    "@storybook/nextjs": "^8.0.8",
     "@storybook/react": "^8.0.7",
     "@storybook/test": "^8.0.7",
     "eslint-plugin-storybook": "^0.8.0",
-    "storybook": "^8.0.7"
+    "storybook": "^8.0.7",
+    "storybook-react-intl": "^3.0.1"
   }
 }

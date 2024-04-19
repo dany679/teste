@@ -1,6 +1,7 @@
 import type { Preview } from "@storybook/react";
 import { themes } from "@storybook/theming";
-import "../app/globals.css";
+import "../app/[locale]/globals.css";
+import { reactIntl } from "./reactIntl";
 import ThemeDecorator from "./themeDecorator";
 
 export const globalTypes = {
@@ -15,8 +16,16 @@ export const globalTypes = {
   },
 };
 const preview: Preview = {
+  globals: {
+    locale: reactIntl.defaultLocale,
+    locales: {
+      en: "English",
+      pt: "Portugues",
+    },
+  },
   decorators: [ThemeDecorator],
   parameters: {
+    reactIntl,
     docs: {
       theme: themes.dark,
     },

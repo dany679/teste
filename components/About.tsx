@@ -1,19 +1,27 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const skillsList = [
+  { skill: "Next.js" },
   { skill: "React.js" },
+  { skill: "React-native" },
   { skill: "TypeScript" },
   { skill: "JavaScript" },
-  { skill: "Next.js" },
   { skill: "Tailwind" },
-  { skill: "StyledComponents" },
-  { skill: "MongoDb" },
-  { skill: "MySql" },
+  { skill: "Styled-Components" },
+  { skill: "Mui" },
+  { skill: "Cypress" },
   { skill: "Node.js" },
+  { skill: "Nest.js" },
+  { skill: "Prisma" },
+  { skill: "MongoDb" },
+  { skill: "Postgresql" },
+  { skill: "MySql" },
   { skill: "Git" },
   { skill: "Github" },
   { skill: "Kabam" },
   { skill: "Jira" },
+  { skill: "..." },
 ];
 const webList = [
   { skill: "TypeScript" },
@@ -25,45 +33,35 @@ const webList = [
   { skill: "Github" },
 ];
 const About = () => {
+  const places = useTranslations("components.navbar.places");
+  const t = useTranslations("Home.about");
+
   return (
     <article id="about">
-      <h2 className="title_article">About Me</h2>
+      <h2 className="title_article">{t("name")}</h2>
       <hr className="w-6 h-1 mx-auto my-4 bg-primary-500 border-0 rounded"></hr>
       <div className="grid-row-to-cols2 ">
         <div className="text-center md:text-start  md:max-w-2xl   h-full ">
-          <h3 className="subtitle_article py-2 ">Get to Know me!</h3>
+          <h3 className="subtitle_article py-2 ">{t("subtitle")}!</h3>
           <p>
-            Hi, my name is Danie and I am a{" "}
-            <span className="font-bold">{" highly ambitious"}</span>,
-            <span className="font-bold">{" self-motivated"}</span>, and
-            <span className="font-bold">{" driven"}</span> software engineer
-            based in Pirapora, MG.
+            {t("paragraph-1")}{" "}
+            <span className="font-bold">{t("paragraph-1-span")}</span>,{" "}
+            {t("paragraph-1-2")}
           </p>
           <br />
-          <p>
-            I start working from the company inside the box in Florianópolis -
-            SC in 2021 with a BS in Computer Engineering and have been working
-            in the field ever since.
-          </p>
+          <p>{t("paragraph-2")}</p>
+          <br />
+          <p>{t("paragraph-3")}</p>
           <br />
           <p>
-            I have a wide range of hobbies and passions that keep me busy. From
-            reading, playing sports, traveling and love to keep myself engaged
-            and learning new things.
-          </p>
-          <br />
-          <p>
-            I believe that you should{" "}
+            {t("paragraph-4-my-things-1")}{" "}
             <span className="font-bold text-primary-500">
-              never stop growing
+              {t("paragraph-4-my-things-2-span")}
             </span>{" "}
-            and that&#39;s what I strive to do, I have a passion for technology
-            and a desire to always push the limits of what is possible. I am
-            excited to see where my career takes me and am always open to new
-            opportunities. 🙂
+            {t("paragraph-4-my-things-3")}
           </p>
           <br />
-          <p>This web-site is using</p>
+          <p>{t("web-site-technologies")}</p>
           <br />
 
           <div className="flex flex-wrap flex-row justify-center md:justify-start">
@@ -76,10 +74,9 @@ const About = () => {
             })}
           </div>
         </div>
-
-        <div className="text-center md:text-start  md:max-w-2xl   h-full">
+        <div className="text-center md:text-start  md:max-w-2xl h-full">
           <h3 className="subtitle_article py-2 ">My skills</h3>
-          <div className="flex flex-wrap flex-row justify-center  md:justify-start">
+          <div className="flex flex-wrap flex-row justify-center md:justify-start">
             {skillsList.map((item, idx) => {
               return (
                 <p key={idx} className="pill">
