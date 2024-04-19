@@ -31,7 +31,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O projeto sera um site de portfólio desenvolvido no next13 no qual o deploy foi executado no vercel, para verificar olhe o demo acima <a href="https://vercel.com/" /> vercel</a>
+O projeto sera um site de portfólio desenvolvido no next.14 no qual o deploy foi executado no vercel, para verificar olhe o demo acima <a href="https://vercel.com/" /> vercel</a>
 
 ## :memo: Licença
 
