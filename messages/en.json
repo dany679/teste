@@ -1,0 +1,61 @@
+{
+  "shared": {
+    "current": "current"
+  },
+  "components": {
+    "navbar": {
+      "buttonsList": ["home", "about", "experiences", "projects"],
+      "places": {
+        "home": "home",
+        "about": "about",
+        "experiences": "experiences",
+        "projects": "projects"
+      },
+      "languages": "languages"
+    }
+  },
+  "Home": {
+    "heroSection": {
+      "title": "Hi, I'm Danielly",
+      "subtitle-1": "I'have been for more than two years",
+      "subtitle-2": "Software Engineer. ",
+      "subtitle-3": "Working towards creating software that makes life easier and more meaningful."
+    },
+    "about": {
+      "name": "About me",
+      "subtitle": "Get to Know me",
+      "paragraph-1": "Hi, my name is Danie and I am a",
+      "paragraph-1-span": " highly ambitious, self-motivated",
+      "paragraph-1-2": ", and eternal student software engineer based on Brazil.",
+      "paragraph-2": "I start working from the company inside the box in Florianópolis - SC in 2021 with a BS in Computer Engineering and have been working in the field ever since.",
+      "paragraph-3": "I have a wide range of hobbies and passions that keep me busy. From reading, playing sports, traveling and love to keep myself engaged and learning new things.",
+      "paragraph-4-my-things-1": "I believe that you should",
+      "paragraph-4-my-things-2-span": " never stop growing ",
+      "paragraph-4-my-things-3": "and that's what I strive to do, I have a passion for technology and a desire to always push the limits of what is possible. I am excited to see where my career takes me and am always open to new opportunities. 🙂",
+      "web-site-technologies": "This web-site is using"
+    },
+    "experiences": {
+      "inside-the-box": {
+        "what-i-did": "The company make other company's products more accessible to the inside public. the website and app are made to simplify the process of verification, education and support.",
+        "location": "Florianópolis, SC - Brazil"
+      },
+      "roadr": {
+        "what-i-did": "The company has a new product that is a car service repair platform. The main goal of the platform that allows the users to find services for car problems in a simple and fast way. the company use B2B and B2C models.",
+        "location": "Los Angeles, CA - USA"
+      },
+      "furando-a-fila": {
+        "what-i-did": "Its a web-site very user friendly, were the promoter create the events and all the areas available and the user  buy the tickets end manager all the sells and events.",
+        "location": "BH, MG - Brazil"
+      },
+      "freelancer": {
+        "what-i-did": "Generate new website or app, features, fix bugs, and improve the performance of existing code. work with the team to improve the code quality and the architecture of the application.",
+        "location": "Remote"
+      }
+    },
+    "projects": {
+      "fix-machines": "This web site base on the idea of someone how work fix machines can be used to track the repairing process",
+      "promtopia": "Promtopia is a web app to save and find prompt or tag prompts.",
+      "genius": "The project is a website to generate data like 'images, conversation , code 'through the prompt developed using openAi and stripe"
+    }
+  }
+}

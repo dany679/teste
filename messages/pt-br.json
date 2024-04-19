@@ -1,0 +1,61 @@
+{
+  "shared": {
+    "current": "atual"
+  },
+  "components": {
+    "navbar": {
+      "buttonsList": ["Início", "sobre", "experiências", "projetos"],
+      "places": {
+        "home": "Início",
+        "about": "Sobre",
+        "experiences": "experiências",
+        "projects": "projetos"
+      },
+      "languages": "Idiomas"
+    }
+  },
+  "Home": {
+    "heroSection": {
+      "title": "Olá, sou Danielly",
+      "subtitle-1": " Eu tenho sido por mais de dois anos",
+      "subtitle-2": "Engenheiro de Software. ",
+      "subtitle-3": "Trabalhando para criar um software que torne a vida mais fácil e significativa."
+    },
+    "about": {
+      "name": "Sobre mim",
+      "subtitle": "Me conheça",
+      "paragraph-1": "Olá, meu nome é danielly e sou",
+      "paragraph-1-span": " altamente ambiciosa, auto motivada e procurando sempre aprender",
+      "paragraph-1-2": "software engineer localizada no Brasil.",
+      "paragraph-2": "Início minha carreira na empresa inside the box em Florianópolis - SC em 2021 com um BS em Engenharia de Computação e tenho trabalhado no campo desde então.",
+      "paragraph-3": "Eu tenho uma grande variedade de hobbies e paixões que me mantêm ocupado. De ler, praticar esportes, viajar e amar para me manter envolvido e aprender coisas novas.",
+      "paragraph-4-my-things-1": "Eu acredito que você deveria",
+      "paragraph-4-my-things-2-span": " nunca pare de crescer ",
+      "paragraph-4-my-things-3": "e é isso que eu me esforço para fazer, eu tenho uma paixão pela tecnologia e um desejo de sempre empurrar os limites do que é possível. Estou animado para ver onde minha carreira me leva e estou sempre aberto a novas oportunidades. 🙂",
+      "web-site-technologies": "Este site está usando"
+    },
+    "experiences": {
+      "inside-the-box": {
+        "what-i-did": "Tonar os produtos de outras empresas mais acessíveis ao público interno. o site e o aplicativo são feitos para simplificar o processo de verificação, educação e suporte.",
+        "location": "Florianópolis, SC - Brasil"
+      },
+      "roadr": {
+        "what-i-did": "Roadr tem um produto que é uma plataforma de reparação de serviços de carro (eletricos também). O principal objetivo da plataforma que permite aos usuários encontrar serviços para problemas de carro de forma simples e rápida.a empresa usa modelos B2B e B2C",
+        "location": "Los Angeles, CA - USA"
+      },
+      "furando-a-fila": {
+        "what-i-did": "É um site muito amigável, onde o promotor criar os eventos e todas as áreas disponíveis e o usuário comprar os bilhetes, e gerencia completamente suas vendas e eventos.",
+        "location": "BH, MG - Brasil"
+      },
+      "freelancer": {
+        "what-i-did": "Gerar novo site ou aplicativo, recursos, corrigir bugs e melhorar o desempenho do código existente.trabalhe com a equipe para melhorar a qualidade do código e a arquitetura do aplicativo.",
+        "location": "Remoto"
+      }
+    },
+    "projects": {
+      "fix-machines": "Este site baseia-se na ideia de alguém como as máquinas de reparo de trabalho podem ser usadas para rastrear o processo de reparo",
+      "promtopia": "Promtopia é um aplicativo da web para salvar e encontrar prompts ou tags.",
+      "genius": "O projeto é um site para gerar dados como 'imagens, conversa ', código 'através do prompt desenvolvido usando openAi e strip"
+    }
+  }
+}

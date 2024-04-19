@@ -5,16 +5,12 @@ import { expect, userEvent, within } from "@storybook/test";
 const meta = {
   title: "Components/Navbar",
   component: Navbar,
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
-  tags: ["autodocs"],
-  parameters: {
-    // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
-    // layout: "fullscreen",
+  argTypes: {
+    title: { type: "string", defaultValue: "Why is type undefined?" },
   },
+  parameters: {},
   args: {
-    // onLogin: fn(),
-    // onLogout: fn(),
-    // onCreateAccount: fn(),
+    locale: "en",
   },
   decorators: [
     (StoryDark) => {

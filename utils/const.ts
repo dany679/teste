@@ -1,6 +1,7 @@
 export const projectsList = [
   {
     color: "bg-project-0",
+    id: "fix-machines",
     name: "Fix Machines",
     date: "april 2024",
     image: "/projects/project-3-next-14-Fix-Machines.png",
@@ -24,6 +25,7 @@ export const projectsList = [
     ],
   },
   {
+    id: "promtopia",
     name: "Promtopia",
     description:
       "Promtopia is a web app to save and find prompt or tag prompts.",
@@ -41,6 +43,7 @@ export const projectsList = [
   },
 
   {
+    id: "genius",
     color: "bg-project-0",
     name: "Genius",
     date: "may 2020",
@@ -62,10 +65,11 @@ export const projectsList = [
 
 export const experienceList = [
   {
+    name: "inside-the-box",
     startDate: "2021",
     endDate: "2022",
     title: "Inside the box",
-    location: "Florianópolis, SC - Brazil",
+    location: `Florianópolis, SC - Brasil`,
     image: "/jobs/work-inside.png",
     description:
       "The company make other company's products more accessible to the inside public. the website and app are made to simplify the process of verification, education and support .",
@@ -84,6 +88,7 @@ export const experienceList = [
     ],
   },
   {
+    name: "roadr",
     startDate: "2022",
     endDate: "2023",
     title: "Roadr",
@@ -91,7 +96,7 @@ export const experienceList = [
     remote: true,
     image: "/jobs/work-inside.png",
     description:
-      "The company has a new product that is a car service repair platform. The main goal of the platform that allows the users to find services for car problems in a simple and fast way. the company use B2B and B2C models",
+      "The company has a new product that is a car service repair platform. The main goal of the platform that allows the users to find services for car problems in a simple and fast way. the company use B2B and B2C models.",
     link: "https://roadr.com/",
     tools: [
       { name: "React" },
@@ -105,10 +110,11 @@ export const experienceList = [
     ],
   },
   {
+    name: "furando-a-fila",
     startDate: "2023",
     endDate: "2024",
     title: "Furando a fila squad",
-    location: "BH, MG - Brazil",
+    location: "BH, MG - Brasil",
     image: "/jobs/work-inside.png",
     description:
       "Its a web-site very user friendly, were the promoter create the events and all the areas available and the user  buy the tickets",
@@ -125,6 +131,7 @@ export const experienceList = [
     ],
   },
   {
+    name: "freelancer",
     startDate: "2023",
     // endDate: "2023",
     title: "Freelancer",

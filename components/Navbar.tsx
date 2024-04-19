@@ -1,28 +1,29 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
 import { useState } from "react";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { Link } from "react-scroll/modules";
+import ToggleLang from "./shared/toggle-lang";
 
 interface NavItem {
   label: string;
   page: string;
 }
 
-const NAV_ITENS: Array<NavItem> = [
-  { label: "Home", page: "home" },
-  { label: "About", page: "about" },
-  { label: "Experiences", page: "experiences" },
-  { label: "Projects", page: "projects" },
-];
-
 const Navbar = () => {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme && theme === "system" ? systemTheme : theme;
   const [navbar, setNavbar] = useState(false);
-  // const [mounted, setMounted] = useState(false);
+  const places = useTranslations("components.navbar.places");
+  const NAV_ITENS: Array<NavItem> = [
+    { page: "home", label: places("home") },
+    { page: "about", label: places("about") },
+    { page: "experiences", label: places("experiences") },
+    { page: "projects", label: places("projects") },
+  ];
   const ToggleTheme = () => (
     <button
       aria-label="Toggle Dark Mode"
@@ -90,13 +91,13 @@ const Navbar = () => {
             navbar ? "block" : "hidden"
           }`}
         >
-          <div className="items-center justify-center  md:flex md:space-x-6  md:space-y-0 space-y-8">
+          <div className="items-center justify-center  md:flex md:space-x-4  md:space-y-0 space-y-8">
             {NAV_ITENS.map((item, index) => (
               <Link
                 key={index}
                 to={item.page}
                 className={
-                  "block lg:inline-block text-neutral-900  hover:text-primary-700 dark:text-neutral-100  hover:dark:text-primary-300  cursor-pointer"
+                  "capitalize block lg:inline-block text-neutral-900  hover:text-primary-700 dark:text-neutral-100  hover:dark:text-primary-300  cursor-pointer"
                 }
                 activeClass="active"
                 spy={true}
@@ -108,6 +109,7 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
+            <ToggleLang />
             <ToggleTheme />
           </div>
         </div>

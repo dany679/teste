@@ -1,10 +1,14 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { HiArrowDown } from "react-icons/hi";
 import { Link } from "react-scroll";
 
 const HeroSection = () => {
+  const t = useTranslations("Home.heroSection");
+  const places = useTranslations("components.navbar.places");
+
   return (
     <section
       id="home"
@@ -14,23 +18,24 @@ const HeroSection = () => {
         <Image
           src="/me-portfolio.jpg"
           alt="danie picture"
-          className=" shadow-3xl rounded-full"
+          className=" shadow-3xl rounded-full w-325 h-325"
           width={325}
           height={325}
+          sizes="100vw"
+          priority
         />
       </div>
       <div className=" text-center md:text-start  md:max-w-2xl">
         <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl  ">
-          Hi, I&#39;m Danie!
-          {/* Ola eu sou Danie! */}
+          {t("title")}
         </h1>
         <p className="sub_tittle mt-4 mb-6">
-          I&#39;have been for more than two years
+          {t("subtitle-1")}
           <span className="font-semibold text-primary-600 sub_tittle">
-            {"  "} Software Engineer {"  "}{" "}
+            {"  "} {t("subtitle-2")} {"  "}{" "}
           </span>
-          living on Pirapora, MG. Working towards creating software that makes
-          life easier and more meaningful.
+
+          {t("subtitle-3")}
         </p>
         <Link
           to="projects"
@@ -41,7 +46,7 @@ const HeroSection = () => {
           offset={-100}
           duration={500}
         >
-          Projects
+          {places("projects")}
         </Link>
         <div className="flex flex-row items-center md:justify-start justify-center mt-10 pt-2  md:pt-4  lg:pt-6">
           <Link

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/navigation";
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 
 const Footer = () => {
@@ -10,7 +10,11 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-row items-center justify-center space-x-1 text-neutral-800 dark:text-neutral-100">
-          <Link href="https://github.com/dany679" rel="noreferrer" target="_blank">
+          <Link
+            href="https://github.com/dany679"
+            rel="noreferrer"
+            target="_blank"
+          >
             <AiOutlineGithub className="button_icons mx-2" size={30} />
           </Link>
           {/* <a href="https://github.com/danie_rose" rel="noreferrer" target="_blank"> i don`t have twitter account

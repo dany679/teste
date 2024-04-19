@@ -1,15 +1,26 @@
 import { experienceList } from "@/utils/const";
+import { useTranslations } from "next-intl";
 import Accordion from "./accordion";
 
 const Experiences = () => {
+  const places = useTranslations("components.navbar.places");
+  const experiences = useTranslations("Home.experiences");
+  const shared = useTranslations("shared");
+
   return (
     <article id="experiences" className="pt-10 max-w-8xl mx-auto">
-      <h2 className="title_article">Experiences</h2>
+      <h2 className="title_article capitalize">{places("experiences")}</h2>
       <hr className="w-6 h-1 mx-auto my-4 bg-primary-500 border-0 rounded"></hr>
       <div className="">
         {experienceList.map((experience, index) => (
-          <Accordion id={experience.title} key={index} {...experience}>
-            <p>{experience.description}</p>
+          <Accordion
+            {...experience}
+            id={experience.title}
+            key={index}
+            location={experiences(`${experience.name}.location`)}
+            endDate={experience.endDate || shared("current")}
+          >
+            <p>{experiences(`${experience.name}.what-i-did`)}</p>
             {experience.tools.map((tool, index) => (
               <span
                 key={index}
