@@ -1,10 +1,11 @@
 "use client";
 import { Link } from "@/navigation";
+import { cn } from "@/utils/lib";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-const ToggleLang = () => {
+const ToggleLang = ({ className }: { className?: string }) => {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
   const handleMouseEnter = () => {
     setDropdownVisible(true);
@@ -19,7 +20,7 @@ const ToggleLang = () => {
 
   return (
     <div
-      className="relative inline-block text-left "
+      className={cn("relative inline-block text-left ", className)}
       // onMouseEnter={handleMouseEnter}
     >
       <button
