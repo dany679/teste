@@ -27,7 +27,7 @@ const Navbar = () => {
   const ToggleTheme = () => (
     <button
       aria-label="Toggle Dark Mode"
-      className="btn_toggle_theme"
+      className={"btn_toggle_theme"}
       data-testid="button-theme-toggle"
       onClick={() =>
         setTheme(!currentTheme || currentTheme === "light" ? "dark" : "light")
@@ -84,7 +84,11 @@ const Navbar = () => {
           >
             <LogoMenu />
           </Link>
-          <PhoneMenu />
+          <div className="flex flex-row justify-center items-center space-x-4">
+            <ToggleLang className=" md:hidden" />
+            {/* <ToggleTheme /> */}
+            <PhoneMenu />
+          </div>
         </div>
         <div
           className={`flex-1 md:flex-initial justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
@@ -109,7 +113,7 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
-            <ToggleLang />
+            <ToggleLang className=" hidden md:block" />
             <ToggleTheme />
           </div>
         </div>

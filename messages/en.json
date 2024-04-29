@@ -17,7 +17,7 @@
   "Home": {
     "heroSection": {
       "title": "Hi, I'm Danielly",
-      "subtitle-1": "I'have been for more than two years",
+      "subtitle-1": "I'have been for more than three years",
       "subtitle-2": "Software Engineer. ",
       "subtitle-3": "Working towards creating software that makes life easier and more meaningful."
     },
@@ -57,5 +57,7 @@
       "promtopia": "Promtopia is a web app to save and find prompt or tag prompts.",
       "genius": "The project is a website to generate data like 'images, conversation , code 'through the prompt developed using openAi and stripe"
     }
-  }
+  },
+  "modal-cv": "Choose CV language",
+  "modal-file": "developer frontend full stack 2024"
 }

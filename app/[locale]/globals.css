@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  overflow-y: auto;
+}
+body.stop-scrolling {
+  overflow-y: hidden;
+}
 @layer utilities {
   /* p {
     @apply text-sm md:text-base  bg-red-500;

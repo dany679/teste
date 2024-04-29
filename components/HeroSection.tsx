@@ -1,19 +1,22 @@
 "use client";
 
+import { Link as NavigationLink } from "@/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { HiArrowDown } from "react-icons/hi";
 import { Link } from "react-scroll";
+import Modal from "./shared/modal";
 
 const HeroSection = () => {
   const t = useTranslations("Home.heroSection");
-  const places = useTranslations("components.navbar.places");
+  // const places = useTranslations("components.navbar.places");
 
   return (
     <section
       id="home"
       className="grid md:grid-rows-1 md:grid-flow-col lg:gap-20 gap-6  py-16 sm:py-32 md:py-40  place-items-center place-content-center "
     >
+      <Modal />
       <div className="flex min-w-[325px]">
         <Image
           src="/me-portfolio.jpg"
@@ -37,17 +40,13 @@ const HeroSection = () => {
 
           {t("subtitle-3")}
         </p>
-        <Link
-          to="projects"
+        <NavigationLink
+          href="?cv=true"
+          rel="noreferrer"
           className="btn_primary"
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
         >
-          {places("projects")}
-        </Link>
+          <button type="button">Download CV</button>
+        </NavigationLink>
         <div className="flex flex-row items-center md:justify-start justify-center mt-10 pt-2  md:pt-4  lg:pt-6">
           <Link
             to="about"
