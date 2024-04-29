@@ -4,7 +4,6 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect } from "react";
-
 function Modal() {
   const t = useTranslations();
   const router = useRouter();
@@ -20,6 +19,7 @@ function Modal() {
       document.body.classList.remove("stop-scrolling");
     };
   }, [modal]);
+
   return (
     <>
       {modal && (
@@ -60,10 +60,11 @@ function Modal() {
                     })
                     .map((lang) => (
                       <Link
-                        target="_blank"
-                        href={`/files/cv-${lang}.pdf`}
+                        href={`/files/developer frontend full stack 2024 ${lang}.pdf`}
                         key={lang}
-                        download={`developer frontend full stack 2024 ${lang}.pdf`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        download={`Developer frontend full stack 2024 ${lang}.pdf`}
                         className="px-4 py-2 text-sm text-primary-700 hover:bg-primary-200 bg-primary-300 mx-2 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-300"
                       >
                         {lang}
