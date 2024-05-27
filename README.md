@@ -1,11 +1,11 @@
 <p align="center">
-  <img alt="" src="./readme.gif" height-max='720px'>
+  <!-- <img alt="" src="./readme.gif" height-max='720px'> -->
 </p>
 
 <p>Link para visitar o site : 
-<a href="https://portifolio-dany679.vercel.app/"/>Demo</a>
+<!-- <a href="https://portifolio-dany679.vercel.app/"/>Demo</a> -->
 </p>
-<p align='center'> Portifolio 2.0 <p/>
+<p align='center'> Blog  <p/>
 
 <p align="center">
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;

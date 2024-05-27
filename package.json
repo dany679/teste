@@ -11,6 +11,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@notionhq/client": "^2.2.15",
     "@storybook/core-events": "^8.0.8",
     "@types/node": "20.5.0",
     "@types/react": "^18.2.74",

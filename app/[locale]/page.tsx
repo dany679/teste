@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Experiences from "@/components/Experience";
 import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/Projects";
+import { useRouter } from "@/navigation";
 export const metadata = {
   title: "Danie Rose",
   icons: {
